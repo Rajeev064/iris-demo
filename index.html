@@ -3,6 +3,7 @@
  <head>
   <title>IRIS 2021</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155184244-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -34,10 +35,14 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/exp1style.css">
+    <link rel="stylesheet" href="css/fi_style.css">
+    <link rel="stylesheet" href="css/sc_style.css">
+    
     <link rel="icon" type="image/ico" href="img/title.png" />
 </head>
 
 <body>
+	<div id="preloader"></div>
   <!--==========================
     Header
   ============================-->
@@ -45,85 +50,41 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <a href="#intro"><img src="img/nav.png" alt="IEEE LOGO" title="" /></a>
+        <a href="https://ieee.vit.edu.in"><img src="img/nav.png" alt="IEEE LOGO" title="" /></a>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="https://ieee.vit.edu.in">Home</a></li>
+          <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#box1">About IRIS</a></li>
-	  <li><a href="#container">Speakers For IRIS 2021</a></li>
-          <li><a href="https://ieee.vit.edu.in/index.html#features16-1g">Team</a></li>
-          <li><a href ="https://ieee.vit.edu.in/ieeevitblog/">Blog</a></li>
-          <li><a href="#carousel-example-1z">IRIS 2020</a></li>
+          <li><a href="#glimpses">IRIS 2020</a></li>
+          <li><a href="#schedule">IRIS 2021 Schedule</a></li>
+	        <li><a href="#speakers">Speakers For IRIS 2021</a></li>          
+	        </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-
   <!--==========================
     Intro Section
   ============================-->
   <section id="intro">
-    <div class="intro-container">
-      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-
-
-        <div class="carousel-inner" role="listbox">
-
-          <div class="carousel-item active">
-            <div class="carousel-background"><img src="https://images.pexels.com/photos/693521/pexels-photo-693521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
-            <div class="carousel-container">
-        			<section class="letters">
-                    <div class="IRIS">
-
-                        <div class="intro">
-                            <div class="inspire">
-                                <span class="i ">
-                                    <h1 class="start animated jackInTheBox delay-1s" style = "padding-left: 1em;">I</h1>
-                                </span>
-                                <span class="after">
-                                    <h1 class="ins animated bounceInUp delay-5s">nspire</h1>
-                                </span>
-                            </div>
-
-                            <div class="resonate">
-                                <span class="r ">
-                                    <h1 class="start animated jackInTheBox delay-2s" style = "padding-left: 1em;">R</h1>
-                                </span>
-                                <span class="after">
-                                    <h1 class="reso animated bounceInUp delay-5s">esonate</h1>
-                                </span>
-                            </div>
-
-                            <div class="integrate">
-                                <span class="in ">
-                                    <h1 class="start animated jackInTheBox delay-3s" style = "padding-left: 1em;">I</h1>
-                                </span>
-                                <span class="after">
-                                    <h1 class="int animated bounceInUp delay-5s">ntegrate</h1>
-                                </span>
-                            </div>
-
-                            <div class="succeed">
-                                <span class="s ">
-                                    <h1 class="start animated jackInTheBox delay-4s" style = "padding-left: 1em;">S</h1>
-                                </span>
-                                <span class="after">
-                                    <h1 class="suc animated bounceInUp delay-5s">ucceed</h1>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-          </div>
-      </div>
+    <div class="container-fluid">	
+    	<div id="fly-in">  
+  			<div>Inspire</div>
+  			<div>Resonate</div>
+  			<div>Integrate</div>
+  			<div>Succeed</div>
+  			<div>IRIS<span>2021</span></div>
+		  </div>
+		</div><!-- /container -->
   </section>
+  <!--    ABOUT SECTION   -->
   <div class="container" id="box1">
-    <h3>ABOUT IRIS</h3>
-    <p>IRIS is a series of talks given by people from various walks of life. An acronym for Inspire,Resonate,Integrate, and Succeed. IRIS aims at imparting knowledge and key life lessons through people, who have faced multiple challenges as they struggled to make it to the top of their careers.</p>
-    <h4>Some Glimpses of IRIS 2020</h4>
-    <div id="carousel-example-1z" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel" style="border-radius: 10px;">
+    <h2>ABOUT IRIS</h2>
+    <p>IRIS is a series of talks given by people from various walks of life. An acronym for Inspire,Resonate,Integrate, and Succeed. IRIS aims at imparting knowledge and key life lessons through people, who have faced multiple challenges as they struggled to make it to the top of their careers.</p><br><br><br>
+    <div id="glimpses">
+    <h2>Some Glimpses of IRIS 2020</h2>
+      <div id="carousel-example-1z" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel" style="border-radius: 10px;">
       <div class="carousel-inner" role="listbox">
         <!--First slide-->
         <div class="carousel-item active">
@@ -154,25 +115,149 @@
       </a>
     </div>
   </div>
-  <h3 style="text-align: center;">Speakers for IRIS 2021</h3>
+  <!-- EVENT SCHEDULE SECTION  -->
+  <div class="event_area plus_padding" id="schedule">
+      <h2>Event Schedule</h2>
+      <div class="double_line">
+        <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="date">
+                            <h3>06 Feb 2021</h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="single_speaker">
+                            <img src="img/ad_p.png" alt="">
+                            <div class="speaker-name">
+                                <div class="heading d-flex justify-content-between align-items-center">
+                                    <span>Alcatraz Dey</span>
+                                    <div class="time">
+                                        4pm onwards<br><a class="btn btn-outline-dark btn-sm" href="#intro" style="color:#000000">Register Here</a>
+                                    </div>
+                                </div>
+                                <h5>Author, Biker and Life Coach.</h5>
+                                <p>Author of three Amazon Chartbusters</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="date">
+                            <h3>07 Feb 2021</h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="single_speaker">
+                            <img src="img/rc_p.png" alt="">
+                            <div class="speaker-name">
+                                <div class="heading d-flex justify-content-between align-items-center">
+                                    <span>Rajagopala Chidambaram</span>
+                                    <div class="time">
+                                        4pm onwards<br><a class="btn btn-outline-dark btn-sm" href="#intro" style="color:#000000">Register Here</a>
+                                    </div>
+                                </div>
+                                <h5>Indian Physicist</h5>
+                                <p>Known for India's Nuclear Weapons Programmes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="date">
+                            <h3>13 Feb 2021</h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="single_speaker">
+                            <img src="img/sl_p.png" alt="">
+                            <div class="speaker-name">
+                                <div class="heading d-flex justify-content-between align-items-center">
+                                    <span>Shronit Ladhani</span>
+                                    <div class="time">
+                                        4pm onwards<br><a class="btn btn-outline-dark btn-sm" href="#intro" style="color:#000000">Register Here</a>
+                                    </div>
+                                </div>
+                                <h5>Entrepreneur & Angel Investor</h5>
+                                <p>Founder of CareerNinja, TEDx Speaker</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="date">
+                            <h3>14 Feb 2021</h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="single_speaker">
+                            <img src="img/yw_p.png" alt="">
+                            <div class="speaker-name">
+                                <div class="heading d-flex justify-content-between align-items-center">
+                                    <span>Yuvraj Walmiki</span>
+                                    <div class="time">
+                                        4pm onwards<br><a class="btn btn-outline-dark btn-sm" href="#intro" style="color:#000000">Register Here</a>
+                                    </div>
+                                </div>
+                                <h5>Indian Field Hockey Player</h5>
+                                <p>Brand Ambassador of Do Good Sports NGO, Mumbai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+  <div id="speakers">
+  <h2 style="text-align: center;">Speakers for IRIS 2021</h2>
   <div class="container" id="container">
     <div class="row">
     <div class="col-md-6 col-centered">
 		<div class="card">
-			<img src="img\rc.jpg" alt="">
+			<img src="img\rc2.jpg" alt="">
       <div class="details" style="text-align: center;">
-        <p><b>Rajagopala Chidambaram</b><br>Coordinated test preparation for <b>Pokran-I & Pokran-II</b><br>Awarded by <b>Padma Shri</b> & <b>Padhma Vibhushan</b></p>
-        <a class="register" href="#" style="text-align: center;"><b>Register</b></a>
-			</div>
+        <h2><b>Rajagopala Chidambaram</b></h2>
+        <ul>
+        	<li>Coordinated test preparation for <b>Pokhran-I & Pokhran-II</b>.</li><br>
+        	<li>Awarded by <b>Padma Shri</b> & <b>Padma Vibhushan</b>.</li>
+        </ul>
+	  	<ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1" href="http://www.barc.gov.in/leaders/rc.html">
+          <i class="fa fa-firefox fa-lg" id="barc"> </i>
+        </a>
+      </li>
+      &nbsp;
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1" href="https://www.insaindia.res.in/detail.php?id=N78-0160">
+          <i class="fa fa-edge fa-lg" aria-hidden="true" id="insa"></i>
+        </a>
+      </li>
+    </ul>
+	  </div>
     </div>
   </div>
   <div class="col-md-6 col-centered">
 		<div class="card">
 			<img src="img\Yuvraj-Walmiki.jpg" alt="">
 			<div class="details" style="text-align: center;">
-        <p><b>Yuvraj Walmiki</b><br>Member of Indian team that won <b>2011 Asian Champions Trophy</b><br>Highest Goal Scorer in <b>German Hockey League</b> for two years 2010-2011</p>
-        <a class="register" href="#" style="text-align: center;"><b>Register</b></a>
-			</div>
+        <h2><b>Yuvraj Walmiki</b></h2>
+        <ul>
+        	<li>Member of Indian Hockey Team that won <b>2011 Asian Champions Trophy</b>.</li><br>
+        	<li>Highest Goal Scorer in <b>German Hockey League</b> for two years 2010-2011.</li>
+        </ul>
+        <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/CircleofSports.YuvrajWalmiki/">
+          <i class="fa fa-facebook-f fa-lg" id="fbook"> </i>
+        </a>
+      </li>
+      &nbsp;
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1" href="https://instagram.com/yuvrajhockey_9?igshid=17x16rswu8tgy">
+          <i class="fa fa-instagram fa-lg" aria-hidden="true" id="instag"></i>
+        </a>
+      </li>
+      &nbsp;
+    </ul>
+    	</div>
     </div>
   </div>
     </div>
@@ -181,23 +266,65 @@
     <div class="card">
 			<img src="img\ad.PNG" alt="">
       <div class="details" style="text-align: center;">
-        <p><b>Alcatraz Dey</b><br>Graduated from <b>NDA & EX-IAF</b>(Indian Air Force) Flying Officer<br>Took <b>IronButt Challenge</b> and rode mountain bike from Kanyakumari to Kashmir under<b> 120 Hours</b></p>
-        <a class="register" href="#" style="text-align: center;"><b>Register</b></a>
-			</div>
+        <h2><b>Alcatraz Dey</b></h2>
+        <ul>
+        	<li>Graduated from <b>NDA</b> and <b> Ex IAF(Indian Air Force)</b> Flying Officer.</li><br>
+        	<li>Took <b>IronButt Challenge</b> and rode mountain bike from Kanyakumari to Kashmir under<b> 120 Hours</b>.</li>
+        </ul>
+        <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1" href="https://www.linkedin.com/in/alcatraz-dey">
+          <i class="fa fa-linkedin fa-lg" id="linkedin"> </i>
+        </a>
+      </li>
+      &nbsp;
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1" href="https://alcatrazdey.com/">
+          <i class="fa fa-firefox fa-lg" aria-hidden="true" id="web"></i>
+        </a>
+      </li>
+    	</ul>
+    </div>
     </div>
   </div>
     <div class="col-md-6 col-centered">
 		<div class="card">
 			<img src="img\shronit ladhani.png" alt="">
 			<div class="details" style="text-align: center;">
-        <p><b>Shronit Ladhani</b><br>Featured in <b>Brainfeed's 30 Under 30 Entrepreneurs of India</b><br>President & CEO at <b>AIESEC,Mumbai</b></p>
-        <a class="register" href="#" style="text-align: center;"><b>Register</b></a>
-			</div>
+        <h2><b>Shronit Ladhani</b></h2>
+        <ul>
+        	<li>Featured in <b>Brainfeed's 30 Under 30 Entrepreneurs of India</b>.</li><br>
+        	<li>Partner at <b>Tykee Capital</b>.</li>
+        </ul>
+        <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1" href="https://www.linkedin.com/in/shronit">
+          <i class="fa fa-linkedin fa-lg" id="linkedin"> </i>
+        </a>
+      </li>
+      &nbsp;
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1" href="https://instagram.com/shronit?igshid=122e1wp7w4mt2">
+          <i class="fa fa-instagram fa-lg" aria-hidden="true" id="instag"></i>
+        </a>
+      </li>
+    </ul>
+	</div>
     </div>
   </div>
 </div>
   </div>
-
+</div>
+</div>
+  <div class="container" id ="sponsor">
+  <h2> Our Sponsors</h2>
+  <div class="row">
+    <div class="col-sm-3 col-centered">
+      <a href='https://totalsf.in/' target="blank_"><img src="img/tsf2.jpg" alt="Total Sports and Fitness" class="center"></a>
+    </div>
+    </div>
+  </div>
+</div>
 
 <footer class="page-footer font-small special-color-dark pt-4">
   <div class="container">
@@ -221,6 +348,7 @@
       </li>
     </ul>
   </div>
+
   <div class="footer-copyright text-center py-3">© 2019-20 Copyright:<br>
     <a href="https://ieee.vit.edu.in/"> IEEE-VIT STUDENT BRANCH</a>
     <br>
@@ -228,6 +356,8 @@
   </div>
 </footer>
 <script src="https://kit.fontawesome.com/e25b852c87.js" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>

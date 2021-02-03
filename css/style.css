@@ -12,14 +12,22 @@ body {
 }
 
 a {
-  color: #18d26e;
+  color: #8c8c8c;/*18d26e;*/
   transition: 0.5s;
+}
+
+.card a {
+  color: #000000;
+}
+
+.card a:hover {
+  color: #0e76a8;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #18d36e;
+  color: #8c8c8c/*18d36e;*/
   outline: none;
   text-decoration: none;
 }
@@ -77,6 +85,10 @@ h6 {
   z-index: 9999;
   overflow: hidden;
   background: #fff;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 #preloader:before {
@@ -369,7 +381,7 @@ h6 {
 
 .nav-menu li:hover > a,
 .nav-menu > .menu-active > a {
-  color: #18d26e;
+  color: #8c8c8c/*18d26e;*/
 }
 
 .nav-menu > li {
@@ -397,7 +409,7 @@ h6 {
 }
 
 .nav-menu ul li:hover > a {
-  color: #18d26e;
+  color: #8c8c8c;/*18d26e;*/
 }
 
 .nav-menu ul ul {
@@ -712,13 +724,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 	padding: 20px 10px;
 	transform: translateY(100%);
   transition: all 0.3s;
-  font-size: 15px !important;
+  font-size: 14px !important;
 }
 
 .details h2{
-	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
+	/*text-transform: uppercase;*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
 	color: #565656;
 	letter-spacing: 1px;
 }
